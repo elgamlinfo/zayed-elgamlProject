@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board</title>
+    <link rel="stylesheet" href="style/dashboard.css">
+    <script src="fonts/all.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+</head>
+<body>
+
+    <!-- start header -->
+    <div class="header">
+        <div class="row">
+
+            <!-- start toggle button -->
+            <button class="toggle_btn"><i class="fas fa-bars"></i></button>
+            <!-- end toggle button -->
+
+            <div class="left_area">
+                <h3>Admin <span>Panel</span></h3>
+            </div>
+        </div>
+        <div class="right_area">
+            <a href="#" class="logout_btn">Logout</a>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <div class="wrapper">
+
+        <!-- start side navbar -->
+        <div class="side_navbar active">
+            <!-- start side navbar title -->
+            <div class="side_title">
+                <center>
+                    <img src="./images/me.png" class="profile_image" alt="">
+                    <h4>John</h4>
+                </center>
+            </div>
+            <!-- end side navbar title -->
+
+            <!-- start side navbar navs -->
+            <div class="side_navs">
+                <ul>
+                    <li class="navs"><a href="#"  data-scroll="#about"><i class="fas fa-user"></i><span>about</span></a></li>
+                    <li class="navs"><a href=""  data-scroll="#skills"><i class="fas fa-paint-brush"></i><span>skills</span></a></li>
+                    <li class="navs"><a href=""  data-scroll="#portofolio"><i class="far fa-image"></i><span>portofolio</span></a></li>
+                    <li class="navs"><a href=""  data-scroll="#article"><i class="fas fa-blog"></i><span>article</span></a></li>
+                    <li class="navs"><a href=""  data-scroll="#social-links"><i class="fas fa-id-card"></i><span>social links</span></a></li>
+                </ul>
+            </div>
+            <!-- end side navbar navs -->
+        </div>
+        <!-- end side navbar -->
+
+        <!-- start content side -->
+        <div class="content_side">
+            <!-- start about -->
+            <div class="about scroll-Sync" id="about">
+                <div class="about_title">
+                    <h3>about</h3>
+                    <span></span>
+                </div>
+                <div class="row">
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="input-data">
+                                <input type="text" name="firstname" required>
+                                <div class="underline"></div>
+                                <label>first name:</label>
+                            </div>
+                            <div class="input-data">
+                                <input type="text" name="lastname" required>
+                                <div class="underline"></div>
+                                <label>last name:</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-data">
+                                <input type="text" name="job" required>
+                                <div class="underline"></div>
+                                <label>job:</label>
+                            </div>
+                            <div class="input-data">
+                                <input type="date" name="birthdate" required>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-data">
+                                <input type="number" name="phone" required>
+                                <div class="underline"></div>
+                                <label>phone:</label>
+                            </div>
+                            <div class="input-data">
+                                <input type="text" name="city" required>
+                                <div class="underline"></div>
+                                <label>city:</label>
+                            </div>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" name="cvlink" required>
+                            <div class="underline"></div>
+                            <label>CV link:</label>
+                        </div>
+                        <div class="input-data" title="your image here...">
+                            <input type="file" name="image"  required>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="input-data">
+                            <textarea required></textarea>
+                            <div class="underline">
+                            </div>
+                            <label>information about you:</label>
+                        </div>
+                        <input type="submit" value="Submit" class="sub-btn primary-btn">
+                    </form>
+                </div>
+            </div>
+            <!-- end about -->
+
+            <!-- start skills -->
+            <div class="skills scroll-Sync" id="skills">
+                <div class="container">
+                    <div class="skills_title">
+                        <h2>skills</h2>
+                        <button class="add_skill"><i class="fas fa-plus-circle"></i><span>add Skill</span></button>
+                    </div>
+
+                    <!-- start skills table -->
+                    <table class="skills_table">
+                        <thead>
+                            <tr>
+                                <th>skill name</th>
+                                <th>Years Of Experiance</th>
+                                <th>percentage</th>
+                                <th>options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>html</th>
+                                <th>2</th>
+                                <th>80%</th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>css</th>
+                                <th>2</th>
+                                <th>90%</th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>js</th>
+                                <th>1</th>
+                                <th>70%</th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>sass</th>
+                                <th>1</th>
+                                <th>80%</th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>bootstrap</th>
+                                <th>2</th>
+                                <th>60%</th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>pug js</th>
+                                <th>1</th>
+                                <th>80%</th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- end skills table -->
+
+                    <!-- start skill form -->
+                    <div class="skill_form ">
+                        <form action="" method="post">
+                            <button class="exitBtn"><i class="fas fa-times"></i></button>
+                            <div class="input-data">
+                                <input type="text" name="skillName" required>
+                                <div class="underline"></div>
+                                <label>skill name:</label>
+                            </div>
+                            <div class="input-data">
+                                <input type="number" name="YearsOfExperiance" required>
+                                <div class="underline"></div>
+                                <label>Years Of Experiance:</label>
+                            </div>
+                            <div class="input-data">
+                                <input type="number" name="Percentage" required>
+                                <div class="underline"></div>
+                                <label>Percentage:</label>
+                            </div>
+                            <input type="submit" value="Submit" class="sub-btn primary-btn">
+                        </form>
+                    </div>
+                    <!-- end skill form -->
+                </div>
+            </div>
+            <!-- end  skills -->
+
+            <!-- start portofolio -->
+            <div class="portofolio scroll-Sync" id="portofolio"> 
+                <div class="container">
+                    <div class="portofolio_title">
+                        <h2>portofolio</h2>
+                        <button class="add_project"><i class="fas fa-plus-circle"></i><span>add project</span></button>
+                    </div>
+
+                     <!-- start portofolio table -->
+                    <div class="portofolio_table">
+
+                        <!-- start category table  -->
+                        <table class="categ_table">
+                            <thead>
+                                <tr>
+                                    <th><input type="text" placeholder="Enter Category:"></th>
+                                    <th><button class="add_categ"><i class="fas fa-plus-circle"></i></button></th>
+                                </tr>
+                                <tr>
+                                    <th>category name:</th>
+                                    <th>options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>design</th>
+                                    <th>
+                                        <div class="row">
+                                            <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                            <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>photography</th>
+                                    <th>
+                                        <div class="row">
+                                            <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                            <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>development</th>
+                                    <th>
+                                        <div class="row">
+                                            <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                            <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- end category table  -->
+
+                        <!-- start project table -->
+                        <table class="proj_table">
+                            <thead>
+                                <tr>
+                                    <th>project link</th>
+                                    <th>image</th>
+                                    <th>options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><a href="#"><i class="fas fa-link"></i><span>link</span></a></th>
+                                    <th><img src="./images/1.jpg" alt=""></th>
+                                    <th>
+                                        <div class="row">
+                                            <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                            <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                        </div>
+                                    </th>       
+                                </tr>
+                                <tr>
+                                    <th><a href="#"><i class="fas fa-link"></i><span>link</span></a></th>
+                                    <th><img src="./images/2.jpg" alt=""></th>
+                                    <th>
+                                        <div class="row">
+                                            <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                            <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                        </div>
+                                    </th>       
+                                </tr>
+                                <tr>
+                                    <th><a href="#"><i class="fas fa-link"></i><span>link</span></a></th>
+                                    <th><img src="./images/3.jpg" alt=""></th>
+                                    <th>
+                                        <div class="row">
+                                            <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                            <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                        </div>
+                                    </th>       
+                                </tr>
+                                <tr>
+                                    <th><a href="#"><i class="fas fa-link"></i><span>link</span></a></th>
+                                    <th><img src="./images/4.jpg" alt=""></th>
+                                    <th>
+                                        <div class="row">
+                                            <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                            <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                        </div>
+                                    </th>       
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- end project table -->
+                    </div>
+                <!-- end portofolio table -->
+
+                <!-- start portofolio form -->
+                <div class="porto_form">
+                    <form action="" method="post">
+                        <button class="exitPortoBtn"><i class="fas fa-times"></i></button>
+                        <div class="input-data">
+                            <input type="text" name="link" required>
+                            <div class="underline"></div>
+                            <label>project link:</label>
+                        </div>
+                        <div class="input-data" title="project image here...">
+                            <input type="file" name="image" required>
+                            <div class="underline"></div>
+                        </div>
+                        <select name="category" id="">
+                            <option value="design">design</option>
+                            <option value="photography">photography</option>
+                            <option value="development">development</option>
+                        </select>
+                        <input type="submit" value="Submit" class="sub-btn primary-btn">
+                    </form>
+                </div>
+                <!-- end portofolio form -->
+                </div>
+            </div>
+            <!-- end portofolio -->
+            
+            <!-- start article  -->
+            <div class="article scroll-Sync" id="article">
+                <div class="container">
+                    <div class="article_title">
+                        <h2>article</h2>
+                        <button class="add_article"><i class="fas fa-plus-circle"></i><span>add article</span></button>
+                    </div>
+
+                     <!-- start article table -->
+                    <table class="article_table ">
+                        <thead>
+                            <tr>
+                                <th>article title</th>
+                                <th>image</th>
+                                <th>options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>how to create great logo for your business?</th>
+                                <th><img src="./images/1.jpg" alt=""></th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>       
+                            </tr>
+                            <tr>
+                                <th>how to create great logo for your business?</th>
+                                <th><img src="./images/2.jpg" alt=""></th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>       
+                            </tr>
+                            <tr>
+                                <th>how to create great logo for your business?</th>
+                                <th><img src="./images/3.jpg" alt=""></th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>       
+                            </tr>
+                            <tr>
+                                <th>how to create great logo for your business?</th>
+                                <th><img src="./images/4.jpg" alt=""></th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>       
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- end article table -->
+
+                    <!-- start article form -->
+                    <div class="article_form">
+                        <form action="" method="post">
+                            <button class="exitArticleBtn"><i class="fas fa-times"></i></button>
+                            <div class="input-data">
+                                <input type="text" name="title" required>
+                                <div class="underline"></div>
+                                <label>article title:</label>
+                            </div>
+                            <div class="input-data" title="article main image here...">
+                                <input type="file" name="image"  required>
+                                <div class="underline"></div>
+                            </div>
+                            <textarea name="editor1"></textarea>
+                            <input type="submit" value="Submit" class="sub-btn primary-btn">
+                        </form>
+                    </div>
+                    <!-- end article form -->
+                </div>
+            </div>
+            <!-- end article  -->
+
+            <!-- start social media links -->
+            <div class="social_links scroll-Sync" id="social-links">
+                <div class="container">
+                    <div class="social_title">
+                        <h2>social links</h2>
+                    </div>
+
+                    <!-- start links table -->
+                    <table class="links_table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="text" name="" id="" placeholder="name">
+                                </th>
+                                <th>
+                                    <input type="text" name="" id="" placeholder="link">
+                                </th>
+                                <th>
+                                    <button class="add_link"><i class="fas fa-plus-circle"></i></button>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>name</th>
+                                <th>link</th>
+                                <th>options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>facebook</th>
+                                <th><a href="#"><i class="fas fa-link"></i><span>link</span></a></th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>twitter</th>
+                                <th><a href="#"><i class="fas fa-link"></i><span>link</span></a></th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>instgram</th>
+                                <th><a href="#"><i class="fas fa-link"></i><span>link</span></a></th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>linkedin</th>
+                                <th><a href="#"><i class="fas fa-link"></i><span>link</span></a></th>
+                                <th>
+                                    <div class="row">
+                                        <button class="edit"><i class="fas fa-edit"></i><span>edit</span></button>
+                                        <button class="delete"><i class="fas fa-trash"></i><span>delete</span></button>
+                                    </div>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- end links table -->
+
+                </div>
+            </div>
+            <!-- end social media links -->
+
+        </div>
+        <!-- end content side -->
+    </div>
+
+    <!-- start loading page -->
+    <div class="loadingPage">
+        <div class="loading">
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+        </div>
+    </div>
+    <!-- end loading page -->
+
+    
+    <script src="js/jQuary.js"></script>
+    <script src="js/dash.js"></script>
+    <!-- init text reach box -->
+    <script>CKEDITOR.replace( 'editor1' );</script>
+</body>
+</html>
